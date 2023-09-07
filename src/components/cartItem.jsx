@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { ChevronDown, ChevronUp } from "../icons";
 import { removeItem, increase, decrease } from "../features/cart/cartSlice";
+import { openModal } from "../features/modal/modalSlice";
 
 const CartItem = ({ id, title, price, amount, img }) => {
   const dispatch = useDispatch();
